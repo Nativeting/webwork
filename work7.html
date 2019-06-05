@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>雪梨任务7</title>
+		<meta charset="UTF-8"/>
+		<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		.top{
+			height:31px;
+			background-color:#f4f4f4;
+		}
+		.top_left>li{
+			font-size:12px;
+			line-height:31px;
+			display:inline-block;
+			padding-right:20px;
+			float:left;
+		}
+		.top_right>li{
+			font-size:12px;
+			line-height:31px;
+			display:inline-block;
+			padding-right:10px;
+		}
+		.top_left{
+			font-size:12px;
+			margin-left:181px;
+		}
+		.top_right{
+			margin-left:1100px;
+		}
+		ul>li>a{
+			text-decoration:none;
+			color:#000000;
+		}
+		.list{
+			height:160px;
+			background-color:#ffffff;
+			border-bottom:3px solid #e00304;
+		}
+		#mark{
+			margin-left:181px;
+			margin-top:10px;
+			float:left;
+		}
+		#search{
+			width:407px;
+			height:36px;
+			border:2px solid #e00304;
+			margin-top:30px;
+			margin-left:200px;
+			float:left;
+		}
+		#but{
+			width:93px;
+			height:40px;
+			border:2px solid #e00304;
+			background-color:#e00304;
+			position:absolute;
+			top:61px;
+		}
+		#car{
+			width:170px;
+			height:40px;
+			margin-top:30px;
+			margin-left:200px;
+			border:1px solid #e3e3e3;
+			background-color:#f5f5f5;
+			text-align:center;
+
+		}
+		#list_right>img{
+			position:relative;
+			bottom:10px;
+			right:155px;
+		}
+		#list_right>p{
+			position:absolute;
+			top:70px;
+			left:1240px;
+		}
+		#number{
+			color:red;
+		}
+		#list_right{
+			margin-left:300px;
+		}
+		a{
+			text-decoration:none;
+			color:#000000;
+		}
+		
+		#leading{
+			margin-left:200px;
+			margin-top:50px;
+		}
+		#leading>li{
+			display:inline-block;
+			padding:4px 20px;
+		}
+		#leading>li>a{
+			padding:8px 20px;
+		}
+		#leading>li>a:hover{
+			background-color:#fd0304;
+			border-radius:10%;
+		}
+		#love{
+			padding-left:20px;
+			width:100px;
+			padding:8px 10px;
+			height:25px;
+			background-color:#fd0304;
+			border-radius:10%;
+		}
+		.news>p{
+			padding-top:28px;
+			margin-left:181px;
+			color:#494949;
+		}
+		.news{
+			height:700px;
+			background-color:#fbfbfb;
+		}
+		.center_left{
+			width:215px;
+			height:543px;
+			margin-top:39px;
+			margin-left:171px;
+			float:left;
+		}
+		#list_top>img{
+			margin-left:25px;
+			padding-top:8px;
+			float:left;
+		}
+		#list_top>p{
+			font-size:20px;
+			padding-right:50px;
+			text-align:center;
+
+		}
+		#list_top{
+			width:215px;
+			height:42px;
+			margin-bottom:19px;
+			text-align:center;
+			line-height:42px;
+			background-color:#ffffff;
+		}
+		#list_foot{
+			width:215px;
+			height:512px;
+			background-color:#ffffff;
+		}
+		#list_foot>ul>li{
+			list-style-type:none;
+			padding:10px 65px;
+		}
+		#fang{
+			color:red;
+		}
+		.center_right{
+			width:975px;
+			height:575px;
+			margin-left:400px;
+			margin-top:39px;
+			background-color:#ffffff;
+		}
+		.s1{
+			border:1px solid #dbdbdb;
+			width:220px;
+			height:257px;
+			margin:20px 10px 20px;
+			text-align:center;
+			float:left;
+		}
+		.s2{
+			border:1px solid #dbdbdb;
+			width:220px;
+			height:257px;
+			margin:20px 10px 10px;
+			text-align:center;
+			float:left;
+		}
+		.s3{
+			border:1px solid #dbdbdb;
+			width:220px;
+			height:257px;
+			margin:20px 10px 10px;
+			text-align:center;
+			float:left;
+		}
+		.s4{
+			border:1px solid #dbdbdb;
+			width:220px;
+			height:257px;
+			margin:20px 10px;
+			text-align:center;
+			float:left;
+		}
+		.s5{
+			border:1px solid #dbdbdb;
+			width:220px;
+			height:257px;
+			margin:0 10px 20px;
+			text-align:center;
+			float:left;
+		}
+		.s6{
+			border:1px solid #dbdbdb;
+			width:220px;
+			height:257px;
+			margin:0 10px 20px;
+			text-align:center;
+			float:left;
+		}
+		.s7{
+			border:1px solid #dbdbdb;
+			width:220px;
+			height:257px;
+			margin:0 10px 20px;
+			text-align:center;
+			float:left;
+		}
+		.s8{
+			border:1px solid #dbdbdb;
+			width:225px;
+			height:257px;
+			margin:0 10px 20px;
+			text-align:center;
+			float:left;
+		}
+		#p{
+			color:#a3a3a3;
+		}
+		.footer{
+			height:248px;
+			background-color:#2e2e2e;
+			font-size:14px;
+		}
+		.footer>div>ul{
+			display:inline-block;
+			margin-left:171px;
+			margin-top:20px;
+		}
+		.foot>ul>li{
+			list-style-type:none;
+			padding:5px;
+		}
+		.foot>ul>li>a{
+			color:#ffffff;
+			text-decoration:none;
+		}
+		.xian{
+			width:1190px;
+			height:1px;
+			border:1px solid #454545;
+			background-color:#454545;
+			margin:0 auto;
+		}
+		.foot_f{
+			margin-left:270px;
+		}
+		.foot_f>ul>li{
+			font-size:14px;
+			list-style-type: none;
+			padding:3.8px;
+			display:inline-block;
+			color:#8b8b8b;
+		}
+		.foot_f>p{
+			font-size:14px;
+			color:#8b8b8b;
+			margin-left:175px;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="top">
+			<ul class="top_left">
+				<li>我的收藏</li>
+				<li>E族之家手机版</li>
+				<li><img id="qq" src="F:\大一下课程\大一下Web开发一 陶卓\作业\雪梨作业7/images/qq.jpg"alt="图片"></li>
+				<li>328203328</li>
+			</ul>
+			<ul class="top_right">
+				<li>扫描加入</li>
+				<li>欢迎来到E族之家.</li>
+				<li><a href="#">请登录</a></li>
+				<li>|</li>
+				<li><a  href="#">注册</a></li>
+		</div>
+		<div class="list">
+			<img id="mark" src="F:\大一下课程\大一下Web开发一 陶卓\作业\雪梨作业7/images/E族之家.jpg"alt="图片">
+			<div id="list_right">
+				<input id="search"type="text"value="  请输入关键词！"name="search"/>
+				<input id="but"type="button"value="搜索"name="but"/>
+				<input id="car"type="button"/>
+					<img src="F:\大一下课程\大一下Web开发一 陶卓\作业\雪梨作业7/images/car.jpg"alt="图片"><p>购物车（
+					<a id="number"href="#">0</a>）件</p>
+				
+			</div>
+			<ul id="leading">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">E族生活</a></li>
+				<li><a href="#">E族服务</a></li>
+				<li><a id="love"href="#">E族爱心</a></li>
+			</ul>
+		</div>
+		<div class="news">
+			<p>当前位置：E组爱心>食品</p>
+			<div class="center_left">
+				<div id="list_top">
+					<img src="F:\大一下课程\大一下Web开发一 陶卓\作业\雪梨作业7/images/list.jpg"alt="图片">
+					<p>全部分类</p>
+				</div>
+				<div id="list_foot">
+					<ul>
+						<li><a id="fang"href="#">&gt食品</a></li>
+						<li><a href="#">&gt生活用品</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="center_right">
+				<div class="s1">
+					<img src="F:\大一下课程\大一下Web开发一 陶卓\作业\雪梨作业7/images/s1.jpg"alt="图片">
+					<p id="p">精品辣椒100g</p>
+					<p>￥90.00</p>
+				</div>
+				<div class="s2">
+					<img src="F:\大一下课程\大一下Web开发一 陶卓\作业\雪梨作业7/images/s2.jpg"alt="图片">
+					<p id="p">特级百香果3斤</p>
+					<p>￥90.00</p>
+				</div>
+				<div class="s3">
+					<img src="F:\大一下课程\大一下Web开发一 陶卓\作业\雪梨作业7/images/s3.jpg"alt="图片">
+					<p id="p">万威啤酒500ml</p>
+					<p>￥90.00</p>
+				</div>
+				<div class="s4">
+					<img src="F:\大一下课程\大一下Web开发一 陶卓\作业\雪梨作业7/images/s4.jpg"alt="图片">
+					<p id="p">万威啤酒500ml</p>
+					<p>￥90.00</p>
+				</div>
+				<div class="s5">
+					<img src="F:\大一下课程\大一下Web开发一 陶卓\作业\雪梨作业7/images/s1.jpg"alt="图片">
+					<p id="p">精品辣椒100g</p>
+					<p>￥90.00</p>
+				</div>
+				<div class="s6">
+					<img src="F:\大一下课程\大一下Web开发一 陶卓\作业\雪梨作业7/images/s2.jpg"alt="图片">
+					<p id="p">特级百香果3斤</p>
+					<p>￥90.00</p>
+				</div>
+				<div class="s7">
+					<img src="F:\大一下课程\大一下Web开发一 陶卓\作业\雪梨作业7/images/s3.jpg"alt="图片">
+					<p id="p">万威啤酒500ml</p>
+					<p>￥90.00</p>
+				</div>
+				<div class="s8">
+					<img src="F:\大一下课程\大一下Web开发一 陶卓\作业\雪梨作业7/images/s4.jpg"alt="图片">
+					<p id="p">万威啤酒500ml</p>
+					<p>￥90.00</p>
+				</div>
+
+			</div>
+				
+		</div>
+		<div class="footer">
+			<div class="foot">
+			<ul>
+				<li><a href="#">新手上路</a></li>
+				<li><a href="#">售后流程</a></li>
+				<li><a href="#">购物流程</a></li>
+				<li><a href="#">订购方式</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">配送方式</a></li>
+				<li><a href="#">货到付款区域</a></li>
+				<li><a href="#">配送支付查询</a></li>
+				<li><a href="#">支付方式说明</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">购物指南</a></li>
+				<li><a href="#">常见问题</a></li>
+				<li><a href="#">订购流程</a></li>
+				<li><a href="#">注册新会员</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">售后服务</a></li>
+				<li><a href="#">退换货原则</a></li>
+				<li><a href="#">售后服务保证</a></li>
+				<li><a href="#">换货流程</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">关于我们</a></li>
+				<li><a href="#">网站故障报告</a></li>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">投诉与建议</a></li>
+			</ul>
+		</div>
+		<div class="xian">
+		</div>
+		<div class="foot_f">
+			<ul>
+				<li>E族生活</li><li>|</li>
+				<li>居家维修保养</li><li>|</li>
+				<li>住宿优惠信息</li><li>|</li>
+				<li>出行接送</li><li>|</li>
+				<li>E族活动</li><li>|</li>
+				<li>E族爱心</li><li>|</li>
+				<li>积分商城</li>
+			</ul>
+			<p>© 2017-2018  E族之家  版权所有，并保留所有权利。ICP备案证书号：粤ICP备17127392号</p>
+		</div>
+	</div>
+	</body>
+</html>
